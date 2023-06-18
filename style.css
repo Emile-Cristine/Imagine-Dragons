@@ -1,0 +1,416 @@
+/* aplicando estilzação no imagine dragons/index.html  */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.bg{
+    background-image: url(imagens/img.jpeg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+    width: 100%;
+    height: 700px;
+}
+
+.bg2{
+    background-image: url(imagens/img01.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+    width: 100%;
+    height: 700px;
+}
+
+.bg3{
+    background-image: url(imagens/img03.png);
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    width: 100%;
+    height: 80%;
+    padding-top: 40%;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2% 20% 2% 5%;
+}
+
+
+.menu{
+    list-style:none;
+    float:left;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0% 35%;
+    font-size: 20px;
+}
+    
+.menu li{
+    position:relative;
+    float:left;
+}
+        
+.menu li a{
+    color:#ffffff;
+    text-decoration:none;
+    padding:5px 0px; 
+    display:block;}
+    
+.menu li a:hover{
+    color: rgb(113, 5, 5);
+    transform: .3s all;
+    cursor: pointer;
+    }
+    
+.menu li  ul{
+    position:absolute;
+    top:25px;
+    left:0;
+    display:none;
+}
+    
+.menu li:hover ul, .menu li.over ul{
+    display:block;
+}
+    
+.menu li ul li{
+    display:block;
+    width:150px;
+}
+
+li{
+    padding: 0% 5%;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+#logo{
+    width: 20%;
+    height: 5%;
+}
+
+h1{
+    color: rgb(113, 5, 5);
+    font-size: 300%;
+    text-align: center;
+    align-items: center;
+    padding: 3%;
+}
+
+h2{
+    color: rgb(113, 5, 5);
+    font-size: 180%;
+    margin-bottom: 1.5%;
+}
+
+h3{
+    font-size: 100%;
+    font-weight: 100;
+    text-align: center;
+    color: rgb(198, 196, 196);
+}
+
+.paragrafo{
+    text-align: justify;
+    color: rgb(198, 196, 196);
+    font-size: 110%;
+    font-weight: 100;
+}
+
+.conteudo{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3%;
+    width: 80%;
+}
+
+.text{ 
+    padding: 8% 15% 80% 15% ;
+    background-color: rgba(0, 0, 0, 0.523);
+    height: 30%;
+    font-weight: 200;
+    color: white;
+    font-size: 120%;
+    text-align: center;
+    justify-content: center;
+}
+
+.banda{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+    list-style: none;
+    padding: 2%;
+}
+
+.img-membro{
+    width: 200px;
+    height: 200px;
+    display: block;
+    line-height: 200px;
+    border-radius: 30px;
+}
+
+.member :hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transition: .3s all;
+    cursor: pointer;
+}
+
+.info{
+    color: white;
+    padding: 3%;
+    text-align: center;
+}
+
+.rodape{
+    text-align: center;
+    color: white;
+    padding: 1%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    line-height: 25px;
+}
+
+.seta{
+    width: 40px;
+    float: left;
+    margin-right: 100px;
+    margin-left: 5px;
+}
+
+.apps{
+    display: flex;
+    flex-direction: row;
+    padding: 5%;
+    list-style: none;
+    text-decoration: none;
+    justify-content: center;
+}
+
+.rede{
+    width: 100%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+}
+
+.app{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.app :hover{
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transition: .3s all;
+    cursor: pointer;
+}
+
+.image{
+    width: 40px;
+    height: 40px;
+}
+
+.text-img {
+    display: flex;
+    align-items: center; 
+    gap: 20px;
+    justify-content: right;
+  }
+  
+.img3{
+    flex-shrink: 0; /* Impede que a imagem encolha */
+    width: 22%;
+}
+  
+.text2{
+    text-align: justify;
+    color: rgb(198, 196, 196);
+    font-size: 110%;
+    font-weight: 100;
+    height: 100%;
+    width: 100%;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(23, 23, 23);
+    margin-top: 3%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    text-indent: 10px;
+}
+
+input{
+    margin-top: 10px;
+    height: 40px;
+    text-indent: 10px;
+}
+
+textarea{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 80px;
+    text-indent: 10px;
+    font-family: 'Josefin', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+button{
+    background-color: rgb(113, 5, 5);
+    color: rgb(255, 255, 255);
+    border-radius:10px;
+    width: 30%;
+    height: 15%;
+    padding: 3%;
+    border-color: rgb(113, 5, 5);
+    border-style: none;
+    font-size: 100%;
+    border: none;
+}
+
+button:hover{
+    transition: .1s all;
+    border: 2px solid;
+    border-color: rgb(113, 5, 5);
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+span{
+    color: rgb(198, 196, 196);
+}
+
+.text-contact{
+    margin-bottom: 15px;
+}
+
+.galery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 15vw);
+    grid-gap: 15px;
+    padding: 5%;
+}
+
+.galery-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.artista{
+    display: flex;
+    padding: 5%;
+}
+
+.item-artista{
+    width: 70%;
+    padding: 5%;
+}
+
+.img-artista{
+    width: 70%;
+}
+
+.sobre-artista{
+    margin-top: 5%;
+    width: 70%;
+    height: 40%;
+}
+
+.nome{
+    font-size: 200%;
+    font-weight: 800;
+    color: rgb(113, 5, 5);
+}
+
+.artista-info{
+    font-size: 150%;
+    font-weight: 100;
+    color: rgb(198, 196, 196);
+}
+
+.albuns-imgs{
+    display: grid;
+    grid-template-columns: repeat(6, 21.1%);
+    grid-template-rows: repeat(2, 15wv);
+    width: 80%;
+}
+
+.albuns-imgs :hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transition: .3s all;
+    cursor: pointer;
+}
+
+.capa{
+    object-fit: cover;
+    width: 92%;
+    height: 90%;
+    padding: 5%;
+}
+
+.info-album{
+    margin-top: 20%;
+    display: flex;
+}
+
+.text-album{
+    padding: 5%;
+    float: right;
+    width: 60%;
+    color: rgb(198, 196, 196);
+}
+
+.capa-album{
+    width: 25%;
+    height: 100%;
+    padding: 5%;
+}
+
+.img-capa{
+    width: 100%;
+    height: 100%;
+}
+
+.butao{
+    padding-top: 5%;
+}
