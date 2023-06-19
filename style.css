@@ -308,11 +308,14 @@ button{
 
 button:hover{
      
-  background-color: #f1f1f1;
+  background-color: transparent;
   border: none;
   position: relative;
   overflow: hidden;
   transition: all 0.3s ease;
+  border: 2px solid;
+  border-color: rgb(113, 5, 5);
+    
 }
 
 .butao{
