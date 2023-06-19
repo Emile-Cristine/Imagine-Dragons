@@ -301,11 +301,13 @@ button{
   
     cursor: pointer;
     border: none;
+
+    padding: 10px 20px;
     
 }
 
 button:hover{
-     padding: 10px 20px;
+     
   background-color: #f1f1f1;
   border: none;
   position: relative;
