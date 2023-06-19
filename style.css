@@ -302,15 +302,12 @@ button{
     border-color: rgb(113, 5, 5);
     border-style: none;
     font-size: 100%;
+    cursor: pointer;
     border: none;
 }
 
 button:hover{
     transition: .1s all;
-    border: 2px solid;
-    border-color: rgb(113, 5, 5);
-    border-radius: 10px;
-    cursor: pointer;
     background-color: transparent;
 }
 
