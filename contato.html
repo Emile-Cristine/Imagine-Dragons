@@ -35,6 +35,13 @@
 			}
 			}
 		</script>
+
+ <script>
+    function exibirAgradecimento() {
+      window.location.href = "mensagem.html";
+    }
+  </script>
+	
 </head>
 
 <body>
@@ -63,7 +70,7 @@
                 sua opinião é muito importante
             </span>
         </div>
-        <form name="form1" action="mensagem.html" method="post">
+        <form name="form1" action="mensagem.html" method="post" onsubmit="exibirAgradecimento()">
                     <input type="text" name="nome" placeholder="Nome">
                     <input type="email" name="email" placeholder="E-mail">
 					<input type="text" name="assunto" placeholder="Assunto">
