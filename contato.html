@@ -12,36 +12,43 @@
         href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap"
         rel="stylesheet">
     <script language="javascript" type="text/javascript">
-            function validar(){
-			var nome=form1.nome.value;
-			var email=form1.email.value;
-			var assunto=form1.assunto.value;
+        function validar() {
+            var nome = form1.nome.value;
+            var email = form1.email.value;
+            var assunto = form1.assunto.value;
 
-			if (nome ==""){
-        	alert ('Por favor, digite o seu nome')
-            form1.nome.focus();
-            return false;
+            if (nome == "") {
+                alert('Por favor, digite o seu nome')
+                form1.nome.focus();
+                return false;
             }
-			if (email ==""){
-        	alert ('Por favor, digite o seu e-mail')
-            form1.email.focus();
-            return false;
+            if (email == "") {
+                alert('Por favor, digite o seu e-mail')
+                form1.email.focus();
+                return false;
             }
-			
-			if (assunto ==""){
-        	alert ('Por favor, digite o seu e-mail')
-            form1.assunto.focus();
-            return false;
-			}
-			}
-		</script>
 
- <script>
-    function exibirAgradecimento() {
-      window.location.href = "mensagem.html";
-    }
-  </script>
-	
+            if (assunto == "") {
+                alert('Por favor, digite o seu e-mail')
+                form1.assunto.focus();
+                return false;
+            }
+        }
+    </script>
+
+    <script>
+        function exibirModal(event) {
+            event.preventDefault(); // Impede o envio padrão do formulário
+            var modal = document.getElementById("myModal");
+            modal.style.display = "block";
+            setTimeout(function () {
+                modal.style.display = "none";
+                document.getElementById("myForm").reset(); // Reseta o formulário após o modal ser fechado
+            }, 3000); // Tempo em milissegundos para exibir o modal antes de fechá-lo automaticamente
+        }
+    </script>
+
+
 </head>
 
 <body>
@@ -63,6 +70,7 @@
             <li><a href="contato.html">Contato</a></li>
         </ul>
     </nav>
+
     <div class="contact">
         <div class="text-contact">
             <h2>Fale conosco</h2>
@@ -70,15 +78,25 @@
                 sua opinião é muito importante
             </span>
         </div>
-        <form name="form1" action="mensagem.html" method="post" onsubmit="exibirAgradecimento()">
-                    <input type="text" name="nome" placeholder="Nome">
-                    <input type="email" name="email" placeholder="E-mail">
-					<input type="text" name="assunto" placeholder="Assunto">
-					<textarea rols="30" cols="30" placeholder="Mensagem"></textarea>
-                <div>
-					<button onclick="return validar()" value="Enviar">Enviar</button>
-                </div>
-                </form>
+
+        <form name="form1" onsubmit="exibirModal(event)">
+            <input type="text" name="nome" placeholder="Nome">
+            <input type="email" name="email" placeholder="E-mail">
+            <input type="text" name="assunto" placeholder="Assunto">
+            <textarea rols="30" cols="30" placeholder="Mensagem"></textarea>
+            <div>
+                <button onclick="return validar()" value="Enviar">Enviar</button>
+            </div>
+        </form>
+
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <h2>Agradecimento</h2>
+                <p>Obrigado pelo envio do formulário!</p>
+            </div>
+        </div>
+
     </div>
     <div class="rodape">
         <h3>Êmile Nogueira 2023 &copyTodos os direitos reservados</h3>
