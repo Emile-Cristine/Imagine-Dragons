@@ -314,6 +314,10 @@ button:hover{
     background-color: transparent;
 }
 
+.butao{
+    padding-top: 1rem;
+}
+
 input [submit]{
     background-color: rgb(113, 5, 5);
     color: rgb(255, 255, 255);
