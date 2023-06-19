@@ -33,7 +33,16 @@ body{
 
 .bg3{
     background-image: url(imagens/img03.png);
-    background-attachment: scroll;
+    background-attachment: scroll; background-color: rgb(113, 5, 5);
+    color: rgb(255, 255, 255);
+    border-radius:10px;
+    border-color: rgb(113, 5, 5);
+    border-style: none;
+  
+    cursor: pointer;
+    border: none;
+
+    padding: 10px 20px;
     background-repeat: no-repeat;
     background-clip: border-box;
     width: 100%;
@@ -294,7 +303,6 @@ textarea{
 
 button{
     background-color: rgb(113, 5, 5);
-    color: rgb(255, 255, 255);
     border-radius:10px;
     border-color: rgb(113, 5, 5);
     border-style: none;
