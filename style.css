@@ -296,11 +296,10 @@ button{
     background-color: rgb(113, 5, 5);
     color: rgb(255, 255, 255);
     border-radius:10px;
-   
-    padding: 1rem;
     border-color: rgb(113, 5, 5);
     border-style: none;
-    font-size: 100%;
+  
+    cursor: pointer;
     border: none;
     
 }
@@ -309,8 +308,7 @@ button:hover{
     transition: .1s all;
     border: 2px solid;
     border-color: rgb(113, 5, 5);
-    border-radius: 10px;
-    cursor: pointer;
+    
     background-color: transparent;
 }
 
