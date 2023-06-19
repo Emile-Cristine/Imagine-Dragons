@@ -433,12 +433,6 @@ span{
     width: 100%;
     height: 100%;
 }
-
-.butao{
-    padding-top: 5%;
-}
-
-
     /* Estilos para o modal */
     .modal {
       display: none;
