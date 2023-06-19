@@ -304,7 +304,7 @@ button{
     font-size: 100%;
     cursor: pointer;
     border: none;
-    padding: 0.5rem
+    padding: 0.5rem;
 }
 
 button:hover{
