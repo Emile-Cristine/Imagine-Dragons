@@ -289,6 +289,7 @@ textarea{
     text-indent: 10px;
     font-family: 'Josefin', sans-serif;
     font-family: 'Roboto', sans-serif;
+    resize: none;
 }
 
 button{
@@ -305,6 +306,28 @@ button{
 }
 
 button:hover{
+    transition: .1s all;
+    border: 2px solid;
+    border-color: rgb(113, 5, 5);
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+input [submit]{
+    background-color: rgb(113, 5, 5);
+    color: rgb(255, 255, 255);
+    border-radius:10px;
+    width: 30%;
+    height: 15%;
+    padding: 3%;
+    border-color: rgb(113, 5, 5);
+    border-style: none;
+    font-size: 100%;
+    border: none;
+}
+
+input [submit]:hover{
     transition: .1s all;
     border: 2px solid;
     border-color: rgb(113, 5, 5);
